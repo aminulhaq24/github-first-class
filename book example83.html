@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>Attribute selecter example</h1>
+    <input type="text" name="username" placeholder="enter username">
+    <input type="text" name="email" placeholder="enter email">
+    <input type="password" name="password" placeholder="enter password">
+ 
+    <script>
+
+        $(document).ready(function(){
+         $("input[name='username']").val("john doe");
+         $("input[type='text']").css("border", "2px solid red");
+        });
+    </script>
+</body>
+</html>
