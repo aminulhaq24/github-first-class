@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        #box {
+            padding: 10px;
+            border: 2px solid black;
+            color: rgb(0, 26, 255);
+            background-color: aquamarine;
+        }
+    </style>
+   
+</head>
+<body>
+   
+    
+    <div id="box" class="test">
+        <h2>Box One</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, ea?</p>
+    </div>
+   <button id="btn" style="margin: 10px;">click to perform mutiple methods</button>
+    <script>
+        $(document).ready(function(){
+         $("#btn").click(function(){
+         $("#box").css("background-color","red").slideUp(1000).slideDown(1000, function(){
+$("#box").css("background-color","green");
+         });
+         });
+        });
+       </script>
+</body>
+</html>
